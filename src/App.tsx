@@ -7,6 +7,7 @@ import Page1 from './page1';
 import Landing from './landing';
 import Landing_mui from './landing_mui';
 import AboutMe from './about-me/about-me';
+import PageProject from './project/project';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/page/2" element={<Page2 />}></Route>
       <Route path="/page/:pageId"></Route>
       <Route path="/" element={<AboutMe />}></Route>
+      <Route path="/aboutme/project" element={< PageProject/>}></Route>
       <Route path='/mui' element={<Landing_mui />}></Route>
     </Routes>
   </BrowserRouter>
